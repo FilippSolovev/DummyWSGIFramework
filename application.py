@@ -1,7 +1,7 @@
 import datetime
 from urllib.parse import parse_qs
 
-from reinventedwheel import ReinventedWheel, render
+from DummyWSGIFramework import ReinventedWheel, render
 
 
 application = ReinventedWheel()
