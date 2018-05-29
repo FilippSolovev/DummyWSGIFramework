@@ -10,7 +10,8 @@ class ReinventedWheel:
     def __init__(self):
         self.urls = []
 
-    def not_found(self, environ, start_response):
+    @staticmethod
+    def not_found(environ, start_response):
         """Should be overridden"""
         start_response('404 NOT FOUND', [('Content-Type', 'text/html')])
         return render('Not found')
